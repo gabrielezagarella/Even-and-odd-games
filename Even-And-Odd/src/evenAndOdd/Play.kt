@@ -40,7 +40,7 @@ class Play(): Games() {
                     3 -> println(super.playEvenAndOdd())
                     0 -> println("Bye, see you soon ${nikname}! \n*******************************'")
                     else -> {
-                        println("Enter a number from 0 to 3, you have inserted $imput")
+                        println("Enter a number from 0 to 3, you have inserted ${imput}")
                     }
                 }
             } while (imput != 0)

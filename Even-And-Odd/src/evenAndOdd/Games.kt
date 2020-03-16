@@ -26,10 +26,10 @@ open class Games : EvenAndOdd {
             println("You entered: ${arg}")
 
             if (arg != "even" && arg != "odd") {
-                throw Exception("Incorrect entry, enter even or odd")
+                return "Incorrect entry, enter even or odd"
             }
             choice = choice ?: null
-            choice = floor(Math.random() * 9999999).toInt()
+            choice = (Math.floor(Math.random() * 9999999)+1).toInt()
             num = { choice!! % 2 }
             number = number ?: null
             number = num()
@@ -74,7 +74,7 @@ open class Games : EvenAndOdd {
 
     override fun randomEvenAndOdd(): String {
         try {
-            choice = Math.floor(Math.random() * 9999999).toInt()
+            choice = (Math.floor(Math.random() * 9999999)+1).toInt()
             choice = choice ?: null
             num = { choice!! % 2 }
             number = number ?: null
